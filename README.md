@@ -1,0 +1,1 @@
+# localizely_sdk
