@@ -62,6 +62,11 @@ class MessageLookupProxy implements MessageLookup {
             ifAbsent: ifAbsent);
       }
 
+      // if we didn't find a message for this locale, use the original string
+      if (translation.isEmpty) {
+        return messageText ?? "";
+      }
+
       return translation;
     } catch (e) {
       _logger.w('Failed to lookup message.', e);
