@@ -1,0 +1,1 @@
+Please see an [example](https://github.com/localizely/flutter-ota-sample-app).
